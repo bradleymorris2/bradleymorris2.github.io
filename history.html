@@ -1,0 +1,114 @@
+<DOCTYPE html>
+<html>
+	<head>
+
+		<title>Project 2 - Bradley Morris</title>
+
+		<meta charset="utf-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="author" content="Bradley Morris">
+
+		<meta name="description" content="Project 2.">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">    
+
+		<!-- links page to flex slider css  -->
+	    <link href="css/flexslider.css" rel="stylesheet">
+
+		<!-- links page to google fonts  -->
+		<link href="https://fonts.googleapis.com/css?family=Dosis|Limelight" rel="stylesheet">
+
+		<!-- links page to font awesome  -->
+		<link href="css/font-awesome.css" rel="stylesheet">
+
+		<!-- link to normalize.css -->
+		<link href="css/normalize.css" rel="stylesheet">
+
+		<!-- custom styles -->
+		<link href="css/history.css" rel="stylesheet">
+
+	</head>
+
+	<body>
+
+	<div class="navButton">
+			<a href="#nav">
+				<i class="fa fa-bars" aria-hidden="true"></i>MENU
+			</a>
+		</div>
+
+		<!-- We add an ID of 'nav' to the nav element so our anchor can target it. -->
+		<nav id="nav">
+			<ul>
+				<li class="hiddenLink">
+					<a href="#">
+						<i class="fa fa-times" aria-hidden="true"></i>CLOSE
+					</a>
+				</li>
+		 		<li class="hiddenLink">&nbsp;</li>
+		 		<li><a href="index.html">Home</a></li>
+				<li><a href="nowplaying.html">Now Playing</a></li>
+				<li><a href="history.html">History</a></li>
+			</ul>
+		</nav>
+
+		<div class="history">
+			<h1>
+				A Brief History:
+			</h1>
+		</div>
+
+		<div class="flexslider">
+		  <ul class="slides">
+		    <li>
+		      <img src="img/avon1.jpg" />
+		    </li>
+		    <li>
+		      <img src="img/avon2.jpg" />
+		    </li>
+		    <li>
+		      <img src="img/avon3.jpg" />
+		    </li>
+		  </ul>
+		</div>
+
+		<!-- jQuery -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/jquery.js">\x3C/script>')</script>
+
+		<!-- FlexSlider -->
+		<script defer src="js/jquery.flexslider.js"></script>
+
+		<script type="text/javascript">
+		  $(function(){
+		    SyntaxHighlighter.all();
+		  });
+		  $(window).load(function(){
+		    $('.flexslider').flexslider({
+		      animation: "slide",
+		      start: function(slider){
+		        $('body').removeClass('loading');
+		      }
+		    });
+		  });
+		</script>
+
+
+		<section class="history">
+
+			<article class="wrapper">
+				Avon Cinema is an independent movie theater on the East Side of Providence. The Avon's Art Deco architecture derives from its opening in February 1938.<br><br>The Avon normally screens independent, art house, and foreign films. Avon was origionally as the Toy Theater in 1915. The theater soon closed and became a parking garage until the Avon took over.<br><br> In the 1970s the Avon became a repertory house and was known as the Avon Repertory Cinema. In 1983, they returned to showing indie films.<br><br> Today it still entertains hundreds from around the Providence area.
+			</article>
+		</section>
+
+		<footer>
+			<i class="fa fa-facebook" aria-hidden="true"></i>
+			<i class="fa fa-instagram" aria-hidden="true"></i>
+			<i class="fa fa-twitter" aria-hidden="true"></i>
+			<i class="fa fa-imdb" aria-hidden="true"></i>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,113 @@
+
+*{
+	box-sizing: border-box;
+	font-family: Helvetica, sans-serif;
+	box-sizing: border-box;
+}
+.wrapper{
+	max-width: 375px;
+	margin: 0 auto;
+	padding: .6em;
+	font-family: 'Dosis', cursive;
+	text-align: left;
+	z-index: 20;
+	color: white;
+}
+
+.navButton {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1001;
+	padding: .5em;
+	background-color: rgba(195,1,1,1);
+	border: solid #aaa;
+	border-width: 0 0 1px;
+}
+
+.navButton a {
+	color: #eee;
+	text-decoration: none;
+	padding: 0 0 0 .5em;
+	font-family: 'Limelight';
+}
+
+i {
+ 	font-size: 1em;
+ 	color: #eee;
+ 	padding: 0 1em 0 0;
+ 	transition: color .5s;
+ }
+
+i:hover {
+ 	color: rgba(195,1,1,.84);
+ }
+
+ #nav {
+ 	position: fixed;
+ 	top: 2em;
+ 	left: -72%;
+ 	width: 72%;
+ 	margin: 0;
+ 	height: 100%;
+ 	background-color: rgba(195,1,1,.84);
+  	transition: left .5s;
+}
+
+#nav:target {
+	left: 0;
+}
+
+nav {
+	z-index: 1000;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	margin-top: .5em;
+}
+nav li {
+	list-style: none;
+	margin: 0;
+	padding: 0;	
+}
+
+nav li a {
+	color: #eee;
+	text-decoration: none;
+	display: block;
+	padding: .5em 1em;
+	transition: all .5s;
+	font-family: 'Dosis'
+}
+
+nav li a:hover {
+	color: #eee;
+	text-decoration: none;
+	background-color: #eee;
+	color: rgba(195,1,1,.84);
+}
+
+
+h1{
+	text-align: center;
+	font-family: 'Limelight', cursive;
+	color: white;
+	padding: .7em;
+	margin: 0 auto;
+	margin-top: 35px;
+}
+
+.history{
+	background-color: #848484;
+	padding-bottom: .5em;
+	margin: 0 auto;
+}
+
+footer{
+	background-color: rgba(195,1,1,1);
+	padding: 1.2em;
+	text-align: center;
+}

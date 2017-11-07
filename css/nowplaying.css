@@ -1,0 +1,236 @@
+/**** nav ****/
+
+.navButton {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1001;
+	padding: .5em;
+	background-color: rgba(195,1,1,1);
+	border: solid #aaa;
+	border-width: 0 0 1px;
+}
+
+.navButton a {
+	color: #eee;
+	text-decoration: none;
+	padding: 0 0 0 .5em;
+	font-family: 'Limelight';
+}
+
+i {
+ 	font-size: 1em;
+ 	color: #eee;
+ 	padding: 0 1em 0 0;
+ 	transition: color .5s;
+ }
+
+i:hover {
+ 	color: rgba(195,1,1,.84);
+ }
+
+ #nav {
+ 	position: fixed;
+ 	top: 2em;
+ 	left: -72%;
+ 	width: 72%;
+ 	margin: 0;
+ 	height: 100%;
+ 	background-color: rgba(195,1,1,.84);
+  	transition: left .5s;
+}
+
+#nav:target {
+	left: 0;
+}
+
+nav {
+	z-index: 1000;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	margin-top: .5em;
+}
+nav li {
+	list-style: none;
+	margin: 0;
+	padding: 0;	
+}
+
+nav li a {
+	color: #eee;
+	text-decoration: none;
+	display: block;
+	padding: .5em 1em;
+	transition: all .5s;
+	font-family: 'Dosis'
+}
+
+nav li a:hover {
+	color: #eee;
+	text-decoration: none;
+	background-color: #eee;
+	color: rgba(195,1,1,.84);
+}
+
+/**** starwars ****/
+
+.starwars{
+	margin-top: -5px;
+	color: white;
+	font-size: .7rem;
+	background-image: url('../img/starwars_bg.jpg');
+}
+
+.header1{
+	margin-top: 40px;
+	font-family: 'Limelight', Helvetica;
+	text-align: center;
+	padding: .3em;
+	font-size: 1.75rem;
+	background-color: rgba(0,0,0,.7);
+}
+
+.trailer{
+	margin-left: 5px;
+	margin-top: -20px;
+	background-color: rgba(0,0,0,.7);
+}
+
+.h3_1{
+	font-family: 'Limelight';
+	text-align: center;
+	color: white;
+	font-size: 2rem;
+	margin: 0 auto;
+	margin-top: 10px;
+	background-color: rgba(0,0,0,.7);
+}
+
+.times{
+	margin: 0 auto;
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+	font-family: 'Dosis', Helvetica;
+	font-size: 1.75rem;
+	padding: .5em;
+	color: white;
+	background-color: rgba(0,0,0,.7);
+	margin-bottom: 35px;
+}
+
+/**** bueller ****/
+
+.bueller{
+	margin-top: -40px;
+	color: white;
+	font-size: .7rem;
+	background-image: url('../img/buellerbg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+}
+
+.header2{
+	margin-top: 40px;
+	font-family: 'Limelight', Helvetica;
+	text-align: center;
+	padding: .3em;
+	font-size: 1.75rem;
+	color: white;
+}
+
+.trailer2{
+	margin-left: 5px;
+	margin-top: -20px;
+}
+
+
+.h3_2{
+	font-family: 'Limelight';
+	text-align: center;
+	font-size: 2rem;
+	margin: 0 auto;
+	margin-top: 10px;
+	color: white;
+}
+
+.times2{
+	margin: 0 auto;
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+	font-family: 'Dosis', Helvetica;
+	font-size: 1.75rem;
+	padding: .5em;
+	color: white;
+	margin-bottom: 30px;
+}
+
+/**** pulp fiction ****/
+
+.pulp{
+	margin-top: -40px;
+	color: white;
+	font-size: .7rem;
+	background-image: url('../img/pulpfictionbg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.header3{
+	margin-top: 40px;
+	font-family: 'Limelight', Helvetica;
+	text-align: center;
+	padding: .3em;
+	font-size: 1.75rem;
+}
+
+.trailer3{
+	margin-left: 5px;
+	margin-top: -20px;
+}
+
+.h3_3{
+	font-family: 'Limelight';
+	text-align: center;
+	color: white;
+	font-size: 2rem;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+.times3{
+	margin: 0 auto;
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+	font-family: 'Dosis', Helvetica;
+	font-size: 1.75rem;
+	padding: .5em;
+	color: white;
+	margin-top: 5px;
+}
+
+.break{
+	margin: 0 auto;
+	width: 100%;
+	background-color: rgba(195,1,1,1);
+	padding: .25em;
+}
+
+footer{
+	background-color: rgba(195,1,1,1);
+	padding: 1.2em;
+	text-align: center;
+}
+
+/* produces a blank line in mobile nav, but is
+hidden when on wider screens. */
+.hiddenLink {
+	display: block;
+}

@@ -1,228 +1,213 @@
 *{
 	box-sizing: border-box;
+	font-family: Helvetica, sans-serif;
+	box-sizing: border-box;
 }
-
 .wrapper{
-	max-width: 775px;
+	max-width: 400px;
 	margin: 0 auto;
-	padding: .4em;
+	padding: .6em;
+	font-family: 'Dosis', cursive;
+	text-align: left;
+	color: white;
+	background-color: #848484;
+}
+
+h2{
 	text-align: center;
-	z-index: 20;
-	font-family: 'Josefin Slab';
-	font-weight: 600;
-}
-
-/********** nav ***********/
-nav {
-	background-color: rgba(204, 0, 0, .9);
-}
-
-nav ol {
-	text-align: right;
-	padding: 2.5em;
+	font-family: 'Limelight', cursive;
+	color: white;
+	padding: .7em;
 	margin: 0 auto;
 }
 
-nav li {
-	display: inline-block;
-}
-
-nav a {
-	font-family: 'Josefin Slab', cursive;
-	font-size: .75rem;
-	font-weight: 500;
-	color: #eee;
-	text-decoration: none;
-	padding: 1.5em .9em;
-}
-
-nav a:hover {
-	background: #eee;
-	color: rgba(204, 0, 0, .9);
-	border-radius: 30px;
-}
-
-
-
-
-/********** top section ***********/
-.hero{
-	background-image: url('../img/statue2.jpg');
+header{
+	font-family: 'Limelight', cursive;
+	text-align: center;
+	background-image: url('../img/avon4.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
-	width: 100%
+	width: 100%;
 	margin: 0 auto;
 	padding: 4em;
 	z-index: 10;
 }
 
 blockquote{
-	margin: 0 auto;
+	font-family: 'Limelight', cursive;
 	text-align: center;
-	font-family: 'Fredericka the Great', cursive;
 	color: white;
-	font-size: 2rem;
-	background-color: rgba(0, 0, 0, .5);
-	z-index: 20;
-	padding: 1em;
-}
-
-.logo{
-  position: absolute;
-  left: 5%;
-  top: 7%;
-  width: 20%;
-  z-index: 10;
-  margin: 0 auto;
-  text-decoration: none;
-   transform: translate(0, -50%);
-
-}
-
-h2{
-	font-weight: 900;
-}
-
-.section1{
+	font-size: 3rem;
 	margin: 0 auto;
-	color: rgba(204, 0, 0, .9);
-	padding: 1em 1em 1em 1em;
+	margin-top: 10px;
+	background-color: rgba(0,0,0,.45);
+	border-radius: 25px;
 }
 
-.section2{
-	margin: 0 auto;
-	color: rgba(204, 0, 0, .9);
-	padding: 1em 1em 1em 1em;
+.navButton {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1001;
+	padding: .5em;
+	background-color: rgba(195,1,1,1);
+	border: solid #aaa;
+	border-width: 0 0 1px;
 }
 
-.section3{
+.navButton a {
+	color: #eee;
+	text-decoration: none;
+	padding: 0 0 0 .5em;
+	font-family: 'Limelight';
+}
+
+i {
+ 	font-size: 1em;
+ 	color: #eee;
+ 	padding: 0 1em 0 0;
+ 	transition: color .5s;
+ }
+
+i:hover {
+ 	color: rgba(195,1,1,.84);
+ }
+
+ #nav {
+ 	position: fixed;
+ 	top: 2em;
+ 	left: -72%;
+ 	width: 72%;
+ 	margin: 0;
+ 	height: 100%;
+ 	background-color: rgba(195,1,1,.84);
+  	transition: left .5s;
+}
+
+#nav:target {
+	left: 0;
+}
+
+nav {
+	z-index: 1000;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	margin-top: .5em;
+}
+nav li {
+	list-style: none;
+	margin: 0;
+	padding: 0;	
+}
+
+nav li a {
+	color: #eee;
+	text-decoration: none;
+	display: block;
+	padding: .5em 1em;
+	transition: all .5s;
+	font-family: 'Dosis'
+}
+
+nav li a:hover {
+	color: #eee;
+	text-decoration: none;
+	background-color: #eee;
+	color: rgba(195,1,1,.84);
+}
+
+.map{
+	background-color: rgba(195,1,1,.84);
+}
+
+.break{
 	margin: 0 auto;
-	color: rgba(204, 0, 0, .9);
-	padding: 1em 1em 1em 1em;
+	width: 100%;
+	background-color: rgba(195,1,1,1);
+	padding: .25em;
+}
+
+h3{
+	text-align: center;
+	font-family: 'Limelight', cursive;
+	color: white;
+	padding: .7em;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+.option{
+	max-width: 400px;
+	margin: 0 auto;
+	padding: .6em;
+	font-family: 'Dosis', cursive;
+	font-weight: 700;
+	font-size: 1.15rem;
+	text-align: center;
+	color: white;
+	background-color: #848484;
 }
 
 footer{
-	background-color: rgba(204, 0, 0, .9);
-	font-family: 'Josefin Slab';
-	color: white;
-	padding: 1em 1em 1em 1em;
+	background-color: rgba(195,1,1,1);
+	padding: 1.2em;
 	text-align: center;
-	width: 100%;
 }
 
-@media only screen and (min-width: 48em) {
-	.logo {
-		float: right;
-		width: 100%;
-		min-width: 10%;
-		max-width: 20%;
-	}
-
-	.hero {
-		float: left;
-		width: 100%;
-		min-width: 33%;
-		max-width: 100%;
-	}
-
-	blockquote {
-		float: left;
-		width: 50%;
-		min-width: 33%;
-		max-width: 100%;
-	}
-
-	.section1 {
-		float: left;
-		width: 100%;
-		background-color: white;
-	}
-
-	.section2 {
-		float: left;
-		width: 100%;
-		background-color: white;
-	}
-
-	.section3 {
-		float: left;
-		width: 100%;
-		background-color: white;
-	}
+/* produces a blank line in mobile nav, but is
+hidden when on wider screens. */
+.hiddenLink {
+	display: block;
 }
 
+/********************************************/
+/* MEDIA QUERIES */
+/********************************************/
 
-@media only screen and (min-width: 48em) {
-	.logo {
-		left: 50%;
-	  	top: 50%;
-	  	transform: translate(-60%, -180%);
-	  	width: 15%;
+@media only screen and (min-width: 30em) {
+	.navButton {
+		display: none;
 	}
 
-	.hero {
-		float: left;
-		width: 100%;
-		min-width: 33%;
-		max-width: 100%;
+	#nav {
+	 	margin: 0;
+	 	width: 100%;
+	 	height: auto;
+	 	background-color: #333;
+	 	background-color: rgba(0,0,0,.84);
+	 	position: static;
 	}
 
-	blockquote {
-		float: left;
-		width: 50%;
-		min-width: 33%;
-		max-width: 100%;
+	nav {
+		margin: 0;
 	}
 
-	.section1 {
-		float: left;
-		width: 100%;
-		background-color: white;
-	}
-
-	.section2 {
-		float: left;
-		width: 100%;
-		background-color: white;
-	}
-
-	.section3 {
-		float: left;
-		width: 100%;
-		background-color: white;
-	}
-}
-
-
-@media only screen and (max-width: 50em) {
-	.hero {
-		float: right;
-		width: 100%;
-	}
-
-	blockquote {
-		float: left;
-		width: 100%;
-	}
-
-	.section1 {
-		float: left;
-		background-color: white;
-		max-width: 475px;
-		margin: 0 auto;
+	nav ul {
 		text-align: center;
+		margin: 0;
 	}
 
-	.section2 {
-		float: left;
-		width: 100%;
-		background-color: white;
+	nav li {
+		display: inline;
 	}
 
-	.section3 {
-		float: left;
-		width: 100%;
-		background-color: white;
+	nav li a {
+		display: inline-block;
+		padding: .5em 1em;
+	}
+
+	.hiddenLink {
+		display: none;
 	}
 }
+
+
+
+/* Large and up */
+@media screen and (min-width: 64em) {}
+
+
